@@ -30,6 +30,10 @@
 <link rel="stylesheet" type="text/css" href="<%= file %>" />
 <% }); %>
 
+<script>
+  document.write('<base href="'+ document.location.pathname +'" />')
+</script>
+
 <!-- compiled JavaScript -->
 <% scripts.forEach( function ( file ) { %>
 <script type="text/javascript" src="<%= file %>"></script>
@@ -38,7 +42,47 @@
 <!-- it's stupid to have to load it here, but this is for the +1 button -->
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
       { "parsetags": "explicit" }
-    </script>
+</script>
+<style type="text/css">
+body {
+		padding-top: 10px;
+}
+form {
+		max-width: 650px;
+		padding: 10px;
+		margin: 0 auto;
+}
+.bg-strip {
+	padding: 5px;
+	background: none;
+	border-bottom: 5px solid #dbdbdb ;
+}
+.alert {
+    padding: 6px 12px;
+}
+.bg-message{
+	margin: 5px;
+    border: 1px solid #cfcfcf;
+    font-weight: bold;
+    color: rgba(217, 79, 130, 0.95);	
+}
+.title-bar {
+    padding: 5px;
+    background: #cfc;
+}
+.title-message{
+    text-align: center;
+    padding: 5px;	
+}
+/**a trick will reduce watch listeners*/
+/**not needed because default it appears*/
+/*tr.no-records {
+    display: block;
+}*/
+tr + tr.no-records {
+    display: none;
+}
+</style>
 </head>
 <body>
 		<div class="container">
@@ -73,7 +117,6 @@
 						</div>
 				</div>
 		</div>
-
 		<div class="container" ui-view="main"></div>
 
 		<footer class="footer">

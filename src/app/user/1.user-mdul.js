@@ -16,5 +16,12 @@ angular.module('appMain.user', [
 		data: {
 			pageTitle: "User"
 		}
+	})
+	/*sub states for user*/
+	.state('user.new', {
+		//url: '/user/new'
+		url: '/new',
+		controller: 'UserCtrl',
+		templateUrl: 'user/user-new.tpl.html'
 	});
 });
