@@ -1,0 +1,27 @@
+<div ui-view>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="thumbnail">
+			  <img src="..." alt="...">
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+		  <div class="caption">
+		    <h3>{{user.firstName}} {{user.lastName}}</h3>
+		    <p>About the user</p>
+		  </div>    	
+		</div>
+	</div>
+	<div class="row">
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Details</h3>
+		  </div>
+		  <div class="panel-body">
+			<ul class="list-group">
+			  <li class="list-group-item">Username: {{user.username}}</li>
+			</ul>	    
+		  </div>
+		</div>
+	</div>
+</div>

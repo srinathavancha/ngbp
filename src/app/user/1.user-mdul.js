@@ -23,5 +23,10 @@ angular.module('appMain.user', [
 		url: '/new',
 		controller: 'UserCtrl',
 		templateUrl: 'user/user-new.tpl.html'
+	})
+	.state('user.detail', {
+		url: '/detail/:id',
+		controller: 'UserCtrl',
+		templateUrl: 'user/user-detail.tpl.html'
 	});
 });

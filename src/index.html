@@ -44,9 +44,6 @@
       { "parsetags": "explicit" }
 </script>
 <style type="text/css">
-body {
-		padding-top: 10px;
-}
 form {
 		max-width: 650px;
 		padding: 10px;
@@ -85,8 +82,9 @@ tr + tr.no-records {
 </style>
 </head>
 <body>
-		<div class="container">
-				<div class="navbar navbar-default">
+		<!--SECTION FOR HEADER -->
+		<header class="navbar navbar-default navbar-static-top po-box-nav">
+				<div class="container-fluid">
 						<div class="navbar-header">
 								<button type="button" class="navbar-toggle" ng-init="menuCollapsed = true"
 										ng-click="menuCollapsed = ! menuCollapsed">
@@ -116,11 +114,19 @@ tr + tr.no-records {
 								</ul>
 						</div>
 				</div>
+		</header>
+		<!--SECTION FOR HEADER BANNER -->
+		<div class="po-box-banner" id="content" tabindex="-1"> 
+			<div class="container"> 
+				<h1>The standard Lorem Ipsum passage, used since the 1500s</h1> 
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>  
+			</div> 
 		</div>
-		<div class="container" ui-view="main"></div>
-
-		<footer class="footer">
-				<div class="container">
+		<!--SECTION FOR CONTAINER -->
+		<div class="container po-box-container" ui-view="main"></div>
+		<!--SECTION FOR FOOTER -->
+		<footer class="footer po-box-footer">
+				<div class="container-fluid">
 						<div class="footer-inner">
 								<ul class="social">
 										<li><a target="_blank" href="http://gplus.to/joshdmiller"><i class="fa fa-google-plus-sign"></i></a></li>

@@ -62,16 +62,100 @@ h2 {
   color: #666;
 }
 
-
 /**
  * Navigation
  */
 
 .navbar {
-  margin-top: 20px;
-  
   small {
     font-size: 60%;
+  }
+}
+
+/*
+ * Main navigation
+ *
+ */
+
+.po-box-nav {
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #553510;
+  border-color: #553510;
+  border-bottom: 0;
+}
+.bs-home-nav .bs-nav-b {
+  display: none;
+}
+.po-box-nav .navbar-brand,
+.po-box-nav .navbar-nav > li > a {
+  font-weight: 500;
+  color: #fff;
+}
+.po-box-nav .navbar-nav > li > a:hover,
+.po-box-nav .navbar-nav > .active > a,
+.po-box-nav .navbar-nav > .active > a:hover {
+  color: #463265;
+  background-color: #f9f9f9;
+}
+.po-box-nav .navbar-toggle .icon-bar {
+  background-color: #563d7c;
+}
+.po-box-nav .navbar-header .navbar-toggle {
+  border-color: #fff;
+}
+.po-box-nav .navbar-header .navbar-toggle:hover,
+.po-box-nav .navbar-header .navbar-toggle:focus {
+  background-color: #f9f9f9;
+  border-color: #f9f9f9;
+}
+
+
+
+/*
+ * Page headers
+ *
+ */
+
+/* Page headers */
+.po-box-banner {
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.po-box-banner h1 {
+  margin-top: 0;
+  color: #fff;
+}
+.po-box-banner p {
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 1.4;
+}
+.po-box-banner .container {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .po-box-banner
+ {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 24px;
+    text-align: left;
+  }
+  .po-box-banner
+ h1 {
+    font-size: 60px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .po-box-banner
+ h1,
+  .po-box-banner
+ p {
+    margin-right: 380px;
   }
 }
 
@@ -85,7 +169,7 @@ h2 {
 
   .footer-inner {
     padding: 40px 0;
-    border-top: 1px solid #DDD;
+    /**border-top: 1px solid #DDD;*/
   }
 
   .social {
@@ -108,6 +192,41 @@ h2 {
         }
       }
     }
+  }
+}
+
+/*
+ * Footer
+ */
+
+.po-box-footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 100px;
+  color: #80811a;
+  text-align: center;
+  background-color: #553510;
+}
+.po-box-footer a {
+  color: #fff;
+}
+.po-box-footer-links {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+.po-box-footer-links li {
+  display: inline-block;
+}
+.po-box-footer-links li + li {
+  margin-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .po-box-footer {
+    text-align: left;
+  }
+  .po-box-footer p {
+    margin-bottom: 0;
   }
 }
 
